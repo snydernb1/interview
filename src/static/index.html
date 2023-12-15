@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mina" type='text/css'>
   <script async src="/app.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
   <title>SavedBy Mock Store</title>
@@ -10,9 +11,16 @@
 
 <body>
   <header>
+    <div id="header">
+      <h2>SavedBy Store</h2>
+      <img src="./cart.svg"/>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
+    <input type="text" id="search" placeholder="Search products..."/>
+    <h2>Products</h2>
+    <div id="products"></div>
   </main>
 </body>
 
