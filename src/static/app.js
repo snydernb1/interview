@@ -7,6 +7,10 @@ function displayProducts(products) {
 		document.getElementById('products').remove()
 	}
 
+	products.sort((a,b) => {
+		return a.price - b.price
+	})
+
 	let productDiv = document.createElement('div')
 	productDiv.setAttribute('id', 'products')
 
@@ -45,6 +49,7 @@ async function setup() {
 	// PRODUCTS CAN BE FETCHED USING: GET /products
 	const res = await fetch('http://localhost:3000/products')
 	const products = await res.json()
+	console.log('this is products', products)
 
 	displayProducts(products)
 
