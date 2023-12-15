@@ -49,7 +49,6 @@ async function setup() {
 	// PRODUCTS CAN BE FETCHED USING: GET /products
 	const res = await fetch('http://localhost:3000/products')
 	const products = await res.json()
-	console.log('this is products', products)
 
 	displayProducts(products)
 
