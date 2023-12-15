@@ -11,6 +11,9 @@ async function setup() {
 
 	products.forEach(ele => {
 		let outerDiv = document.createElement('div')
+		outerDiv.setAttribute('class', 'productDiv')
+		let textDiv = document.createElement('div')
+		textDiv.setAttribute('class', 'textDiv')
 		let photo = document.createElement('img')
 		let title = document.createElement('h4')
 		let price = document.createElement('p')
@@ -25,8 +28,9 @@ async function setup() {
 		price.setAttribute('class', 'price')
 
 		outerDiv.appendChild(photo)
-		outerDiv.appendChild(title)
-		outerDiv.appendChild(price)
+		textDiv.appendChild(title)
+		textDiv.appendChild(price)
+		outerDiv.appendChild(textDiv)
 
 		document.getElementById('products').appendChild(outerDiv)
 	});

@@ -10,12 +10,46 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1em 0 1em ;
+    padding: 0 2em 0 2em ;
     background-color: rgb(103, 182, 249);
     height: 2.5em;
 }
 
+#main {
+    padding:1em 1em 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#products {
+
+    display:grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr;
+    grid-gap: 3em;
+    flex-direction: row;
+    margin: auto;
+}
+
+#search {
+    margin: 0 0 2em 0;
+    height: 2.5em;
+    padding-left: .5em;
+}
+
 .imgs {
-    height: 5em;
-    width: 5em;
+    height: 20em;
+    width: 20em;
+}
+
+.productDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textDiv {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: start;
 }
