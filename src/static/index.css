@@ -15,6 +15,10 @@
     height: 2.5em;
 }
 
+#homeButton {
+    cursor: pointer;
+}
+
 #main {
     padding:1em 1em 0 1em;
     display: flex;
